@@ -1,7 +1,7 @@
 # 2-Sum Interview Problem
 
 def two_sum_problem(arr, target):
-    pass
+    
 
 
 assert two_sum_problem([1, 2, 3], 4) == (0, 2)
