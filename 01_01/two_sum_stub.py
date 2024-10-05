@@ -1,9 +1,13 @@
 # 2-Sum Interview Problem
 
 def two_sum_problem(arr, target):
-    
+    for i in range((len(arr)-1)):
+        for j in (i+1, len(arr)-1):
+            if arr[i] + arr[j] == target:
+                return (i, j)
 
 
+## assertions for testing
 assert two_sum_problem([1, 2, 3], 4) == (0, 2)
 assert two_sum_problem([1234, 5678, 9012], 14690) == (1, 2)
 assert two_sum_problem([2, 2, 3], 4) in [(0, 1), (1, 0)]
